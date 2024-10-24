@@ -89,9 +89,9 @@ services:
   postgres:
     image: postgres:13
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: maulidya
-      POSTGRES_DB: airflow
+      POSTGRES_USER: your_username
+      POSTGRES_PASSWORD: your_db_pass
+      POSTGRES_DB: your_db
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
     healthcheck:
